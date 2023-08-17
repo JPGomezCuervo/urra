@@ -1,0 +1,52 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  position: fixed;
+  background-color: var(--secondary-color) ;
+  height: 100vh;
+  width: 115px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+.NavBar p {
+  margin: 0;
+}
+
+.navbar_home {
+  grid-area: home;
+  text-align: center;
+}
+.navbar_graph {
+  text-align: center;
+  grid-area: graph;
+}
+.navbar_waves {
+  text-align: center;
+  grid-area: waves ;
+}
+.navbar_cloud {
+  text-align: center;
+  grid-area: cloud;
+}
+.navbar_gear {
+  text-align: center;
+  grid-area: gear;
+}
+
+.navbar_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  repeat(7, 1fr);
+  margin: auto 0;
+  justify-items: center;
+  height: 90%;
+  grid-template-areas:
+    "home"
+    "."
+    "graph"
+    "waves"
+    "cloud"
+    "."
+    "gear";
+}
+
